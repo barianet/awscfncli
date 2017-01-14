@@ -346,7 +346,7 @@ ChangeSet creation complete.
 ```
 Here, `awscfncli` generated an unqiue ChangeSet name since I didn't specify one.  Note the name in the output above:
 
-	IAMUsersGroupsAndPolicies-ChangeSet-4d31327d
+    IAMUsersGroupsAndPolicies-ChangeSet-4d31327d
 
 ### Changeset Describe
 
@@ -412,33 +412,32 @@ mapping:
       "Region":
         type: str
         required: yes
-	  "TemplateBody":
-	    type: str
-	  "TemplateURL":
-	    type: str
-	  "Parameters":
-	    type: map
-	  "DisableRollback":
-	    type: bool
-	  "TimeoutInMinutes":
-	    type: int
-	  "NotificationARNs":
-	    type: seq
-	  "Capabilities":
-	    type: seq
-	  "ResourceTypes":
-	    type: seq
-	  "RoleARN":
+      "TemplateBody":
+        type: str
+      "TemplateURL":
+        type: str
+      "Parameters":
+        type: map
+      "DisableRollback":
+        type: bool
+      "TimeoutInMinutes":
+        type: int
+      "NotificationARNs":
+        type: seq
+      "Capabilities":
+        type: seq
+      "ResourceTypes":
+        type: seq
+      "RoleARN":
         type: str
       "OnFailure":
         type: str
       "StackPolicyBody":
-	    type: str
+        type: str
       "StackPolicyURL":
         type: str
       "Tags":
-	    type: map
-
+        type: map
 ```
 
 For more information about parameter values, please check to 
