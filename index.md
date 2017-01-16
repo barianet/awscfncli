@@ -1,16 +1,16 @@
 # Tutorial
 
-In this tutorial, I assume you are familiar with AWS and CloudFromation, and have already setup AWS creditinals for `boto3`.
+In this tutorial, I assume you are familiar with AWS and CloudFromation, and have already setup AWS credentials for `boto3`.
 
 ## Stack Configuration
 
 To start using `awscfncli` you must first create a stack configuration file.
 
-A stack cofiguration file defines:
+A stack configuration file defines:
 
-- Which region the stack is depolyed.
+- Which region the stack is deployed.
 - Name of the tack.
-- CloudFormation template (locally or remote, presumbally compiled from [troposphere](https://github.com/cloudtools/troposphere)).
+- CloudFormation template (locally or remote, presumably compiled from [troposphere](https://github.com/cloudtools/troposphere)).
 - Other stack creation options.
 - Stack parameters.
 - Stack tags.
@@ -278,7 +278,7 @@ Stack ID: arn:aws:cloudformation:us-east-1:1234567890:stack/IAMUsersGroupsAndPol
 Waiter StackUpdateComplete failed: Waiter encountered a terminal failure state
 ```
 
-Failed again!  This time because the password is too simple for my account password policy (`123456` is a very bad password anyway), let's modifiy it to a strong password and try again:
+Failed again!  This time because the password is too simple for my account password policy (`123456` is a very bad password anyway), let's modify it to a strong password and try again:
 
 ```
 $ cfn stack update IAMUsersGroupsAndPolicies.yaml --use-previous-template --override-policy=ALLOW_ALL
@@ -348,7 +348,7 @@ Here, `awscfncli` generated an unqiue ChangeSet name since I didn't specify one.
 
     IAMUsersGroupsAndPolicies-ChangeSet-4d31327d
 
-### Changeset Describe
+### ChangeSet Describe
 
 Describe the change set to view all the stack resource changes:
 
@@ -368,7 +368,7 @@ Resource Changes:
   Scope: ['Properties']
 ```
 
-### Changeset Execute
+### ChangeSet Execute
 
 After review resource changes, execute the ChangeSet using:
 
